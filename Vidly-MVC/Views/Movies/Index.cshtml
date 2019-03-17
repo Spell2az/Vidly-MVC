@@ -1,0 +1,20 @@
+﻿@model System.Collections.Generic.List<Vidly_MVC.Controllers.Movie>
+
+@{
+    ViewBag.Title = "Movies";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table-hover  table-responsive">
+    <tr>
+        <th>Movie Title</th>
+    </tr>
+
+    @foreach (var movie in Model)
+    {
+        <tr>
+            <td>@movie.Title</td>
+        </tr>
+    }
+
+</table>
